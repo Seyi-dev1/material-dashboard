@@ -1,0 +1,44 @@
+.table3Template{
+    display: grid;
+    grid-template-columns: 6rem 6rem 1rem;
+    align-items: center;
+    height: 7rem;
+    border-radius: 15px;
+    box-shadow: 
+    rgba(145, 158, 171, 0.2) 0px 0px 2px 1px,
+    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    padding: 2rem;
+    gap: 3rem;
+    // background-color: rgb(0, 123, 85);
+    overflow: hidden;
+
+    .progressBar{
+        width: 100%;
+    }
+
+    .text{
+        justify-self: end;
+        line-height: 1rem;
+        h1{
+            color: #fff;
+        }
+        p{
+            font-size: 1.2rem;
+            color: rgb(221, 215, 215);
+            // color: rgb(116, 236, 249);
+        }
+    }
+
+    .png{
+        img{
+            margin-left: -5rem;
+            width: 10rem;
+            align-self: center;
+            margin-top: -2.5rem;
+            filter: opacity(0.3);
+        }
+    }
+}
+// styles={buildStyles({pathColor:`rgb(16, 242, 159)`,
+//     textColor:'#fff', trailColor:'rgb(102, 237, 12, 0.1)'})
+//     }

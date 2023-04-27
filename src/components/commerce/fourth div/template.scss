@@ -1,0 +1,29 @@
+.Table{
+// overflow-x: scroll;
+    .ranks{
+        padding: 4px 10px;
+        border-radius: 5px;
+
+        &.Top2{
+            background-color: rgb(204, 252, 251);
+            color: rgb(32, 146, 156);
+        }
+        &.Top1{
+            background-color: rgb(234, 254, 233);
+            color: rgb(5, 159, 23);
+        }
+        &.Top3{
+            background-color: rgb(242, 254, 233);
+            color: rgb(9, 126, 23);
+        }
+        &.Top5{
+            background-color: rgb(255, 222, 222);
+            color: rgb(216, 9, 9);
+        }
+        &.Top4{
+            background-color: rgb(255, 251, 222);
+            color: rgb(216, 144, 9);
+        }
+    }
+
+}

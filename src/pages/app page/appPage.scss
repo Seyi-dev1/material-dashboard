@@ -1,0 +1,103 @@
+.appContainer{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2rem;
+
+    .firstDiv{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 45rem 24rem;
+        gap:7rem;
+
+
+        .one,.two{
+            width: 100%;
+            // background-color: #fff;
+            // box-shadow: 1px 4px 10px rgba(14, 46, 227, 0.087);
+        }
+
+        .one{
+            background-color: rgb(223, 248, 233);
+            padding:4rem 2rem ;
+            border-radius: 15px;
+
+            .content{
+                display: grid;
+                grid-template-columns: 26rem 20rem;
+                gap: 1rem;
+
+                .text{
+                    h1{
+                        color: rgb(0, 82, 73);
+                        font-weight: bold;
+                        line-height: 1.5;
+                        font-size: 2rem;
+                        font-family: "Public Sans", sans-serif;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    p{
+                        color: rgb(36, 152, 139);
+                        font-size: 1.13rem;
+                        line-height: 2rem;
+                    }
+
+                    button{
+                        color:rgb(238, 240, 240);
+                        font-family: inherit;
+                        font-weight: 700;
+                        background-color: rgb(45, 162, 45);
+                        outline: none;
+                        border: none;
+                        padding: 11px 20px;
+                        font-size: 1.2rem;
+                        border-radius: 7px;
+                        margin-top: 1rem;
+                        cursor: pointer;
+                    }
+                }
+
+                .image{
+                    img{
+                        width: 16rem;
+                        transform: rotate(-10deg);
+
+                    }
+                }
+            }
+        }
+
+        .two{
+            height: inherit;
+            border-radius: 15px;
+        }
+
+    }
+
+    .secondDiv{
+       margin-top: 2.5rem;
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       justify-self: center;
+       gap: 3rem;
+    }
+    .thirdDiv{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 20rem 45rem;
+        gap: 7rem;
+    }
+    .fourthDiv{
+        margin-top: 2rem;
+        display: grid;
+        // grid-template-columns: 65% 35%;
+    }
+    .fifthDiv{
+        display: grid;
+        margin-top: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+}

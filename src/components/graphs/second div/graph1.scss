@@ -1,0 +1,61 @@
+.graph1{
+    width: 23rem;
+    height: 13rem;
+    border-radius: 15px;
+    box-shadow: 
+    rgba(145, 158, 171, 0.2) 0px 0px 2px 1px,
+    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+   
+    .content{
+        padding: 1.3rem 1rem;
+
+        .heading{
+            font-weight: 600;
+            font-size: 1.17rem;
+            color:rgb(56, 55, 55);
+        }
+
+        .visual{
+            height: 1.8rem;
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(2, 1fr);
+
+            .percentage{
+                display: flex;
+                align-items: center;
+                gap: .7rem;
+
+                .arrowUp{
+                    
+                    .image, .minus{
+                        background-color: rgb(213, 245, 213);
+                        padding: 5px;
+                        height: 20px;
+                        width: 20px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                    .minus{
+                        background-color: rgb(255, 225, 225);
+                    }
+                }
+                .figure{
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    color: rgb(35, 35, 35);
+                }
+            }
+
+            .graph{
+                justify-self: end;
+            }
+        }
+
+        .number{
+            font-size: 1.35rem;
+            font-weight: bolder;
+            color: rgb(56, 55, 55);
+        }
+    }
+}

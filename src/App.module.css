@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Inter:wght@500&family=Karla&family=Montserrat:wght@500&family=Nunito&family=Open+Sans&family=Pacifico&family=Public+Sans:wght@500&family=Roboto+Condensed:wght@300&family=Roboto+Mono&family=Sacramento&display=swap');
+.app {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif;
+}

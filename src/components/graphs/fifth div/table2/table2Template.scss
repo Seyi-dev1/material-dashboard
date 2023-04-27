@@ -1,0 +1,52 @@
+.table2Template{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 100%;
+    gap: 3rem 0;
+    margin-bottom: 1.5rem;
+
+    .img1{
+        img{
+            width: 3.6rem;
+            border-radius: 50%;
+        }
+    }
+
+    .text{
+        margin-left: -2rem;
+        align-self: flex-start;
+        margin-top: -.6rem;
+        .name{
+            font-size: 1.16rem;
+            text-align: left;
+        }
+        .stats{
+            color: rgb(141, 134, 134);
+            margin-top: -.5rem;
+
+            .emoji{
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    .img2{
+        justify-self: end;
+        .trophy1{
+            background-color: rgb(222, 253, 222);
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .trophy2{
+            background-color: rgb(209, 248, 248);
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .trophy3{
+            background-color: rgb(247, 215, 209);
+            border-radius: 50%;
+            padding: 10px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.home{
+    display: grid;
+    grid-template-columns: 21% 79%;
+    gap:0;
+    width: 100%;
+
+    .sideNav{
+     
+        ::-webkit-scrollbar{
+            width: .4rem;
+          }
+      
+          ::-webkit-scrollbar-thumb{
+            background-color: rgb(176, 176, 180);
+            border-radius:15px;
+            visibility: hidden;
+          }
+      
+          ::-webkit-scrollbar-track{
+            background-color: transparent;
+          }
+
+          &:hover{
+            ::-webkit-scrollbar-thumb{
+              visibility: visible;
+            }
+          }
+          
+    }
+
+    .outlet{
+      border-left: 1px dashed rgb(226, 222, 222);
+      margin-left: .3rem;
+      overflow: hidden;
+
+      .navbar{
+        margin-top: 1rem;
+      }
+    }
+}

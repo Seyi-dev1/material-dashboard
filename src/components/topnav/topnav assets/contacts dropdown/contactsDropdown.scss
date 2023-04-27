@@ -1,0 +1,32 @@
+.notif{
+    background: transparent;
+    border: none;
+    outline: none;
+   
+   &:hover{
+       border-radius: 50%;
+       background-color:rgb(246, 247, 250);
+       cursor: pointer;
+   }
+
+ .icon{
+   padding: .9rem;
+   color:rgb(99, 115, 129);
+   border-radius: 50%;
+   width: 33px;
+   height: 28px;
+ }
+
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  border-bottom: 1px solid rgb(237, 235, 235);
+
+  .heading{
+    color: rgb(70, 67, 67);
+    font-size: .9rem;
+  }
+}

@@ -1,0 +1,20 @@
+.Table{
+
+    .status{
+        padding: 4px 10px;
+        border-radius: 5px;
+
+        &.Pending{
+            background-color: rgb(252, 238, 204);
+            color: rgb(255, 179, 1);
+        }
+        &.Success{
+            background-color: rgb(234, 254, 233);
+            color: rgb(5, 159, 23);
+        }
+        &.Declined{
+            background-color: rgb(255, 222, 222);
+            color: rgb(216, 9, 9);
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.card{
+    width: 15rem;
+    height: 18rem;
+    border-radius: 15px;
+    box-shadow: 
+    rgba(145, 158, 171, 0.2) 0px 0px 2px 1px,
+    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+   
+    .content{
+        padding: 1.3rem 1rem;
+
+        .header{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 1rem;
+
+            .pic{
+                object-fit: cover;
+                background-color: rgb(161, 248, 219);
+                padding: 1rem;
+                border-radius: 50%;
+            }
+
+            .menu{
+                justify-self: end;
+                cursor: pointer;
+            }
+        }
+
+        .body{
+            margin-top: 3rem;
+                .bold{
+                    font-weight: bold;
+                    font-size: 1.3rem;
+                    color: rgb(61, 59, 59);
+                }
+
+                .sup{
+                    font-weight: 100;
+                    color: rgb(31, 186, 134);
+                }
+        }
+
+        .footer{
+            margin-top: 2rem;
+
+            .light{
+                color: rgb(163, 159, 159);
+                font-size: 1.1rem;
+            }
+        }
+    }
+}    

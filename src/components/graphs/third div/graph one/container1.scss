@@ -1,0 +1,19 @@
+.container1{
+    display: grid;
+    // align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    text-align: left;
+    width: 22rem;
+    box-shadow:  rgba(145, 158, 171, 0.2) 0px 0px 2px 1px,
+    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    border-radius: 15px;
+
+    .header{
+        justify-self: center;
+        
+        h2{
+            color: rgb(56, 55, 55);
+        }
+    }
+}

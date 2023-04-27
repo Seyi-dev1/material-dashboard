@@ -1,0 +1,29 @@
+.template2{
+    display: grid;
+    grid-template-columns: 4rem auto;
+    align-items: center;
+    gap: 2rem;
+    .image{
+
+        img{
+            width: 4rem;
+            height: 4rem;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+    }
+
+    .text{
+        line-height: .7rem;
+
+        .name{
+            // font-weight: bold;
+            font-size: 1.2rem;
+            color: rgb(39, 38, 38);
+        }
+        .price{
+            color: rgb(149, 149, 149);
+            font-size: 1.2rem;
+        }
+    }
+}

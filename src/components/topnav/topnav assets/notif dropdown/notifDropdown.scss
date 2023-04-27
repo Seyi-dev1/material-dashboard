@@ -1,0 +1,70 @@
+.notif{
+     background: transparent;
+     border: none;
+     outline: none;
+
+     .menuItem{
+      background-color: red;
+     }
+    
+    &:hover{
+        border-radius: 50%;
+        background-color:rgb(246, 247, 250);
+        cursor: pointer;
+    }
+
+  .icon{
+    padding: .7rem;
+    color:rgb(99, 115, 129);
+    font-size: 2rem;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+  }
+
+
+
+
+}
+.menuItems{
+  display: grid;
+
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    border-bottom: 1px solid rgb(237, 235, 235);
+  
+    .heading{
+      color: rgb(70, 67, 67);
+      font-size: .9rem;
+    }
+  
+    .description{
+      color: rgb(145, 85, 253);
+      background-color: rgba(145, 85, 253, 0.12);
+      padding: 0px 12px;
+      border-radius: 15px;
+    }
+  }
+  .btn{
+    width: 90%;
+    justify-self: center;
+    color: #fff;
+    background-color:  rgb(145, 85, 253);
+    border: none;
+    font-family: inherit;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    outline: none;
+    font-size: .94rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+}
+
+
+

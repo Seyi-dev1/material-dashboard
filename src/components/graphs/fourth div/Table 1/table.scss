@@ -1,0 +1,28 @@
+.table{
+    box-shadow: 
+    rgba(145, 158, 171, 0.2) 0px 0px 2px 1px,
+    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    // padding-bottom: 5rem;
+    border-radius: 10px;
+    display: grid;
+
+    h2{
+        padding: 1rem;
+        color: rgb(83, 81, 81);
+    }
+
+    button{
+        margin: 2rem 0;
+        width: 5rem;
+        justify-self: end;
+        margin-right: 2rem;
+        border: none;
+        outline: none;
+        padding: .7rem .9rem;
+        color: #fff;
+        background-color: rgb(22, 143, 83);
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: inherit;
+    }
+}

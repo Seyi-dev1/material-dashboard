@@ -1,0 +1,22 @@
+.round{
+    // background: transparent;
+    padding: 0;
+
+    img{
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+    }
+}
+.menuItem{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 12rem;
+    color: rgb(93, 91, 91);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#lock-button{
+    border-radius: 50%;
+}

@@ -1,0 +1,87 @@
+.holder{
+    display: grid;
+    grid-template-columns: repeat(4, 20rem);
+    
+    .template{
+        padding: 2rem 0rem;
+        background-color: rgb(177, 246, 251);
+        width: 17rem;
+        border-radius: 15px;
+        display: grid;
+        justify-content: center;
+
+        &.apple{
+            background-color: rgb(205, 240, 205);
+        }
+
+        &.windows{
+            background-color: rgb(254, 241, 213);
+        }
+
+        &.bug{
+            background-color:rgb(249, 226, 220) ;
+        }
+        
+        .icons{
+            justify-self: center;
+            .icon{
+                color: rgb(28, 88, 132);
+                font-size: 2rem;
+                height: 2rem;
+                background-color: rgb(49, 199, 210);
+                padding: 1.7rem;
+                border-radius: 50%;
+
+                &.apple{
+                    color: rgb(5, 97, 5);
+                    background-color: rgb(144, 210, 144);
+                }
+
+                &.windows{
+                    color: rgb(188, 143, 46);
+                    background-color: rgb(252, 218, 146);
+                }
+
+                &.bug{
+                    color: rgb(138, 60, 38);
+                    background-color:rgb(244, 186, 170) ;
+                }
+            }
+        }
+        .figure{
+            font-size: 1.3rem;
+            color: rgb(28, 88, 132);
+            margin-top: 1rem;
+
+            &.apple{
+                color: rgb(5, 97, 5);
+            }
+
+            &.windows{
+                color: rgb(188, 143, 46);
+            }
+
+            &.bug{
+                color: rgb(138, 60, 38);
+            }
+        }
+        
+        .text{
+            color: rgb(16, 125, 133);
+            font-size: 1.2rem;
+            margin-top: -2rem;
+
+            &.apple{
+                color: rgb(5, 97, 5);
+            }
+
+            &.windows{
+                color: rgb(188, 143, 46);
+            }
+
+            &.bug{
+                color: rgb(138, 60, 38);
+            }
+        }
+    }
+}

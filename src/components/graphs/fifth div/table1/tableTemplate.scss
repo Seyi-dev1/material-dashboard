@@ -1,0 +1,22 @@
+.tableTemplate2{
+    display: grid;
+    grid-template-columns: 7rem 2rem 2rem 2rem;
+    gap: 7rem 5rem;
+    width: 20rem;
+
+    .imageAndText{
+        display: grid;
+        grid-template-columns: 1rem 1rem;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.07rem;
+        gap: 2rem;
+
+        .text{
+            text-align: left;
+            color: rgb(84, 82, 82);
+            font-weight: 500;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+
+.template{
+    display: grid;
+    gap: 1rem;
+    // grid-template-columns: repeat(2, 1fr);
+    .text{
+        font-size: 1.1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .title{
+            font-weight: 800;
+            color: rgb(55, 53, 53);
+            font-size: 1.1rem;
+        }
+
+        .figures{
+            justify-self: end;
+            .bold{
+                font-weight: 800;
+                color: rgb(45, 44, 44);
+            }
+            .light{
+                color: rgb(141, 134, 134);
+                margin-left: .5rem;
+            }
+        }
+
+       
+    }
+}

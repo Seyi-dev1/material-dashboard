@@ -1,0 +1,35 @@
+.topnav{
+
+    .navcontent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        .searchbar{
+            margin-left: 2rem;
+
+            .icon{
+                font-size: 2rem;
+                color: rgb(99, 115, 129);
+                font-weight: bold;
+                padding: 0.6rem;
+                border-radius: 50%;
+
+                &:hover{
+                    background: rgb(242, 242, 242);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .links{
+            margin-right: 4rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+          
+        }
+    }
+}

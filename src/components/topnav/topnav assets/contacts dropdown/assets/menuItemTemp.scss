@@ -1,0 +1,28 @@
+.menu-item{
+    display: grid;
+    grid-template-columns: 4rem 15rem  ;
+    align-items: center;
+    width: 23rem;
+    height: 6rem;
+    padding: 0rem 1rem;
+    font-family: 'open sans', sans-serif;
+
+    .image{
+        border: 5px solid rgb(91, 238, 181);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .text{
+        line-height: .6rem;
+        h3{
+            font-size: 1rem;
+            color: rgb(61, 60, 60);
+        }
+        p{
+            color: rgb(175, 169, 169);
+        }
+    }
+}
