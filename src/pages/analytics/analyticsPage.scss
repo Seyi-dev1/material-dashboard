@@ -6,4 +6,18 @@
         margin-top: 2.5rem;
         display: grid;
     }
+
+    .thirdDiv{
+        display: grid;
+        grid-template-columns: 45rem 22rem;
+        margin-top: 2.5rem;
+        gap: 6.5rem;
+    }
+
+    .fourthDiv{
+        display: grid;
+        grid-template-columns: 47rem 24.5rem;
+        margin-top: 2.5rem;
+        gap: 4rem;
+    }
 }

@@ -28,15 +28,15 @@ function App() {
             <Route path='dashboard/commerce' element={<CommercePage/>}/>
             <Route path='dashboard/banking' element={<AnalyticsPage/>}/>
             <Route path='dashboard/booking' element={<CommercePage/>}/>
-            <Route path='dashboard/file' element={<UsersPage/>}/>
-            <Route path='dashboard/user' element={<UsersPage/>}/>
-            <Route path='dashboard/invoice' element={<UsersPage/>}/>
-            <Route path='dashboard/blog' element={<UsersPage/>}/>
-            <Route path='dashboard/filemanager' element={<UsersPage/>}/>
-            <Route path='dashboard/orders' element={<ProductsPage/>}/>
+            <Route path='dashboard/file' element={<AnalyticsPage/>}/>
+            <Route path='dashboard/user' element={<AnalyticsPage/>}/>
+            <Route path='dashboard/invoice' element={<AnalyticsPage/>}/>
+            <Route path='dashboard/blog' element={<AppPage/>}/>
+            <Route path='dashboard/filemanager' element={<CommercePage/>}/>
+            <Route path='dashboard/orders' element={<AnalyticsPage/>}/>
             <Route path='dashboard/health' element={<AnalyticsPage/>}/>
-            <Route path='dashboard/logs' element={<ProductsPage/>}/>
-            <Route path='dashboard/settings' element={<ProfilePage/>}/>
+            <Route path='dashboard/logs' element={<CommercePage/>}/>
+            <Route path='dashboard/settings' element={<AppPage/>}/>
           </Route>
         </Routes>
     </div>

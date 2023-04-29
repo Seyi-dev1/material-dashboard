@@ -80,8 +80,8 @@ export default function Linechart() {
       }}
     >
       <CartesianGrid strokeDasharray="3" vertical={false} strokeOpacity={0.5}/>
-      <XAxis dataKey="name" strokeOpacity={0} />
-      <YAxis  strokeOpacity={0.2} axisLine={false}/>
+      <XAxis dataKey="name" strokeOpacity={0} tickMargin={10} />
+      <YAxis  strokeOpacity={0.2} axisLine={false} tickMargin={10}/>
       <Tooltip />
       <Legend verticalAlign="top" vertOriginX="left" align="right"
         iconType="circle"

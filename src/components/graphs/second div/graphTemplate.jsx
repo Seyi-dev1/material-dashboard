@@ -1,6 +1,6 @@
 
 import React from "react";
-import { BarChart, Bar, Tooltip } from "recharts";
+import { BarChart, Bar, Tooltip, } from "recharts";
 
 const data = [
   {
@@ -49,7 +49,7 @@ const data = [
 
 export default function GraphTemplate({ color }) {
   return (
-    <BarChart width={60} height={40} data={data}>
+    <BarChart width={60} height={40} data={data} layout="horizontal">
     <Tooltip/>
       <Bar dataKey="pv" fill={color} radius={[10, 10, 10, 0]} barSize={4} />
     </BarChart>
