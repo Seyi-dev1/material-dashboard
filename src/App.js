@@ -8,6 +8,8 @@ import AppPage from './pages/app page/AppPage'
 import AnalyticsPage from './pages/analytics/AnalyticsPage'
 import CommercePage from './pages/commerce/CommerecePage'
 import ProductsPage from './pages/products/ProdutsPage'
+import SignIn from './pages/sign in page/signIn';
+import SignUp from './pages/sign up page/signUp';
 
 
 
@@ -18,25 +20,28 @@ function App() {
   return (
     <div className={appstyle.app}>
         <Routes>
-          <Route path='/' element={<Home/>}>
-            <Route path='dashboard/users' element={<UsersPage/>}/>
-            <Route path='dashboard/profile' element={<ProfilePage/>}/>
-            <Route path='dashboard/app'  element={<AppPage/>}/>
-            <Route index  element={<Navigate to={'dashboard/app'}/>}/>
-            <Route path='dashboard/analytics' element={<AnalyticsPage/>}/>
-            <Route path='dashboard/products' element={<ProductsPage/>}/>
-            <Route path='dashboard/commerce' element={<CommercePage/>}/>
-            <Route path='dashboard/banking' element={<AnalyticsPage/>}/>
-            <Route path='dashboard/booking' element={<CommercePage/>}/>
-            <Route path='dashboard/file' element={<AnalyticsPage/>}/>
-            <Route path='dashboard/user' element={<AnalyticsPage/>}/>
-            <Route path='dashboard/invoice' element={<AnalyticsPage/>}/>
-            <Route path='dashboard/blog' element={<AppPage/>}/>
-            <Route path='dashboard/filemanager' element={<CommercePage/>}/>
-            <Route path='dashboard/orders' element={<AnalyticsPage/>}/>
-            <Route path='dashboard/health' element={<AnalyticsPage/>}/>
-            <Route path='dashboard/logs' element={<CommercePage/>}/>
-            <Route path='dashboard/settings' element={<AppPage/>}/>
+          <Route  path='/' element={<Navigate to={'signin'}/>}/>
+          <Route  path='signin' element={<SignIn/>}/>
+          <Route  path='signup' element={<SignUp/>}/>
+          <Route path='dashboard' element={<Home/>}>
+            <Route path='users' element={<UsersPage/>}/>
+            <Route path='profile' element={<ProfilePage/>}/>
+            <Route path='app'  element={<AppPage/>}/>
+            <Route index  element={<Navigate to={'app'}/>}/>
+            <Route path='analytics' element={<AnalyticsPage/>}/>
+            <Route path='products' element={<ProductsPage/>}/>
+            <Route path='commerce' element={<CommercePage/>}/>
+            <Route path='banking' element={<AnalyticsPage/>}/>
+            <Route path='booking' element={<CommercePage/>}/>
+            <Route path='file' element={<AnalyticsPage/>}/>
+            <Route path='user' element={<AnalyticsPage/>}/>
+            <Route path='invoice' element={<AnalyticsPage/>}/>
+            <Route path='blog' element={<AppPage/>}/>
+            <Route path='filemanager' element={<CommercePage/>}/>
+            <Route path='orders' element={<AnalyticsPage/>}/>
+            <Route path='health' element={<AnalyticsPage/>}/>
+            <Route path='logs' element={<CommercePage/>}/>
+            <Route path='settings' element={<AppPage/>}/>
           </Route>
         </Routes>
     </div>

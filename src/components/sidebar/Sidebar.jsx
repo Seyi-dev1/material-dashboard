@@ -25,7 +25,7 @@ function Sidebar() {
   return (
     <div className='sidebar'>
     <div className="logo">
-    <NavLink to={'/'}>
+    <NavLink to={'/dashboard'}>
     <img src={logo} alt="logo" />
     </NavLink> 
     <span className="logo-text">
@@ -49,7 +49,7 @@ function Sidebar() {
         <div className="link-items">
           <ul>
           <NavLink 
-            to={'dashboard/app'}
+            to={'/dashboard/app'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -57,7 +57,7 @@ function Sidebar() {
           <li className='item'><HomeIcon className='icon'/><span className="text">App</span></li>
           </NavLink>
           <NavLink
-           to={'dashboard/commerce'}
+           to={'/dashboard/commerce'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -65,7 +65,7 @@ function Sidebar() {
             <li className="item"><LocalGroceryStoreIcon className='icon'/><span className="text">E-Commerce</span></li>
           </NavLink>
           <NavLink
-          to={'dashboard/analytics'}
+          to={'/dashboard/analytics'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -73,7 +73,7 @@ function Sidebar() {
           <li className="item"><QueryStatsIcon className='icon'/><span className="text">Analytics</span></li>
           </NavLink>
           <NavLink
-          to={'dashboard/banking'}
+          to={'/dashboard/banking'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -81,7 +81,7 @@ function Sidebar() {
           <li className="item"><AccountBalanceIcon className='icon'/><span className="text">Banking</span></li>
           </NavLink>
           <NavLink
-           to={'dashboard/booking'}
+           to={'/dashboard/booking'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -89,7 +89,7 @@ function Sidebar() {
             <li className="item"><BusinessCenterIcon className='icon'/><span className="text">Booking</span></li>
           </NavLink>
           <NavLink
-           to={'dashboard/file'}
+           to={'/dashboard/file'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -107,7 +107,7 @@ function Sidebar() {
         <div className="link-items">
           <ul>
           <NavLink
-          to={'dashboard/user'}
+          to={'/dashboard/user'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -115,7 +115,7 @@ function Sidebar() {
              <li className="item"><PersonIcon className='icon'/><span className="text">User</span></li>
           </NavLink>
           <NavLink
-          to={'dashboard/invoice'}
+          to={'/dashboard/invoice'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -123,7 +123,7 @@ function Sidebar() {
             <li className="item"><ReceiptIcon className='icon'/><span className="text">Invoice</span></li>
           </NavLink>
           <NavLink
-          to={'dashboard/blog'}
+          to={'/dashboard/blog'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -131,7 +131,7 @@ function Sidebar() {
            <li className="item"><ForumIcon className='icon'/><span className="text">Blog</span></li>
           </NavLink>
           <NavLink
-           to={'dashboard/filemanager'}
+           to={'/dashboard/filemanager'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -149,7 +149,7 @@ function Sidebar() {
         <div className="link-items">
           <ul>
           <NavLink
-           to={'dashboard/users'}
+           to={'/dashboard/users'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -157,7 +157,7 @@ function Sidebar() {
             <li className="item"><PeopleAltIcon className='icon'/><span className="text">Users</span></li>
           </NavLink>
           <NavLink
-          to={'dashboard/products'}
+          to={'/dashboard/products'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -165,7 +165,7 @@ function Sidebar() {
              <li className="item"><InventoryIcon className='icon'/><span className="text">Products</span></li>
           </NavLink>
           <NavLink
-          to={'dashboard/orders'}
+          to={'/dashboard/orders'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -183,7 +183,7 @@ function Sidebar() {
         <div className="link-items">
           <ul>
           <NavLink
-           to={'dashboard/health'}
+           to={'/dashboard/health'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -191,7 +191,7 @@ function Sidebar() {
           <li className="item"><MonitorHeartIcon className='icon'/><span className="text">System Health</span></li>
           </NavLink>
           <NavLink
-          to={'dashboard/logs'}
+          to={'/dashboard/logs'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -199,7 +199,7 @@ function Sidebar() {
              <li className="item"><WebStoriesIcon className='icon'/><span className="text">Logs</span></li>
           </NavLink>
           <NavLink
-           to={'dashboard/settings'}
+           to={'/dashboard/settings'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -217,7 +217,7 @@ function Sidebar() {
         <div className="link-items">
           <ul>
           <NavLink
-           to={'user'}
+           to={'/dashboard/user'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
@@ -225,7 +225,7 @@ function Sidebar() {
              <li className="item"><ManageAccountsIcon className='icon'/><span className="text">Profile</span></li>
           </NavLink>
           <NavLink
-           to={'/'}
+           to={'/dashboard/app'}
             className={`link-item ({ isActive, isPending }) =>
              isPending ? "pending" : isActive ? "active" : ""
            `}
