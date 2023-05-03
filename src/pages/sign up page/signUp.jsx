@@ -8,7 +8,8 @@ import { BsFillEyeSlashFill } from 'react-icons/bs'
 import { useDispatch } from 'react-redux'
 import { signUp, googleSignin } from '../../redux/user/userReducer'
 import { useSelector } from 'react-redux'
-import { selectCurrentUser, selectErrorMessage } from '../../redux/user/userSelectors'
+import LoaderButton from '../../components/loader button/loaderButton'
+import { selectCurrentUser, selectErrorMessage, selectIsLoading } from '../../redux/user/userSelectors'
 
 const SignUp = () => {
 
@@ -16,6 +17,8 @@ const SignUp = () => {
       const user = useSelector(state=>selectCurrentUser(state))
      
       const errorMessage = useSelector(state=>selectErrorMessage(state))
+
+      const isLoading = useSelector(state=>selectIsLoading(state))
 
     const [inputs, setInputs] = React.useState({
         email:'',
@@ -57,11 +60,11 @@ const SignUp = () => {
 
     const navigate = useNavigate()
 
-    // React.useEffect(
-    //     ()=>{
-    //         user && navigate('/dashboard/app')
-    //     }
-    // )
+    React.useEffect(
+        ()=>{
+            user && navigate('/dashboard/app')
+        }
+    )
 
   return (
     <div className={styles.signUp}>
@@ -87,7 +90,7 @@ const SignUp = () => {
                     <span onClick={eyeClick} className={styles.move}>{showPassword?<BsFillEyeSlashFill className={styles.icon}/>:<BsFillEyeFill className={styles.icon}/>}</span>
                     </div>
                 </div>
-                <button>Sign Up</button>
+                {isLoading?<LoaderButton/>:<button>Sign Up</button>}
                 <p>Already have an account? <NavLink style={{textDecoration:'none'}} to={'/signin'}>Sign In</NavLink></p>
                 <div className={styles.or}>
                     <div className={styles.line}></div>

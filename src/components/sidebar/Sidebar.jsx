@@ -20,8 +20,17 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { NavLink } from 'react-router-dom';
+import { selectCurrentUser } from '../../redux/user/userSelectors';
+import { useSelector } from 'react-redux';
 
-function Sidebar() {
+const Sidebar = ()=> {
+
+
+  const user = useSelector(state=>selectCurrentUser(state))
+  const firstName = user.firstName
+  const lastName = user.lastName
+
+
   return (
     <div className='sidebar'>
     <div className="logo">
@@ -34,9 +43,9 @@ function Sidebar() {
     </div>
 
     <div className="name">
-      <div className="block"><h2>S</h2></div>
+      <div className="block"><h2>{firstName.charAt(0)}</h2></div>
       <div className="description">
-        <h4>Samwell Tarley</h4>
+        <h4>{firstName} {lastName && lastName}</h4>
         <p>admin</p>
       </div>
     </div>

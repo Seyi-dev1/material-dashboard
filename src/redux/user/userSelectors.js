@@ -13,3 +13,10 @@ export const selectErrorMessage = createSelector(
     [selectError],
     user=>user.errorMessage
 )
+
+const selectLoading = (state)=> state.user
+
+export const selectIsLoading = createSelector(
+    [selectLoading],
+    user=>user.isSigningIn
+)

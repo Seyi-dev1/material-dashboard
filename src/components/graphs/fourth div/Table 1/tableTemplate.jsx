@@ -36,7 +36,7 @@ export default function BasicTable() {
         <TableBody>
           {rows.map((row) => (
             <TableRow
-              key={row.name}
+              key={row.InvoiceId}
               sx={{ '&:last-child td, &:last-child th': { border: '0' } }}
             >
               <TableCell component="th" scope="row"  sx={{ fontSize: 18, fontFamily:'inherit', border:'none' }} align='right'>

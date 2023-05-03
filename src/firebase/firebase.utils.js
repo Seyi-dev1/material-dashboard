@@ -32,10 +32,11 @@ const firebaseConfig = {
             const snapShot = await getDoc(userRef)
 
 
-            if(!snapShot.exists()){
+            if(!snapShot.exists() && additionalData!== undefined){
                 const { firstName, lastName } = additionalData
                 const { email, uid } = userAuth
                 const createdAt = new Date()
+                
                 try {
                     await setDoc(userRef, {
                         email,
@@ -49,6 +50,32 @@ const firebaseConfig = {
                     console.log(error.message)
                 }
             }
+
+            else if(!snapShot.exists() && additionalData === undefined){
+                const { email, uid, displayName } = userAuth
+                const createdAt = new Date()
+
+                try {
+                    await setDoc(userRef, {
+                        email,
+                        firstName:displayName,
+                        createdAt,
+                        id:uid
+                    })
+                } 
+                catch (error) {
+                    console.log(error.message)
+                }
+            }
         return userRef
     
 }
+
+export const getCurrentUser = async () => {
+    return new Promise((resolve, reject)=>{
+     const unsubcribe = auth.onAuthStateChanged(userAuth => {
+         unsubcribe()
+         resolve(userAuth)
+     }, reject)
+    })
+ }

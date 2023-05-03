@@ -7,7 +7,8 @@ import { BsFillEyeFill } from 'react-icons/bs'
 import { BsFillEyeSlashFill } from 'react-icons/bs'
 import { signIn, googleSignin } from '../../redux/user/userReducer'
 import { useDispatch, useSelector } from 'react-redux'
-import { selectCurrentUser, selectErrorMessage } from '../../redux/user/userSelectors'
+import { selectCurrentUser, selectErrorMessage, selectIsLoading } from '../../redux/user/userSelectors'
+import LoaderButton from '../../components/loader button/loaderButton'
 
 const SignIn = () => {
 
@@ -16,6 +17,8 @@ const SignIn = () => {
     const user = useSelector(state=>selectCurrentUser(state))
      
     const errorMessage = useSelector(state=>selectErrorMessage(state))
+
+    const isLoading = useSelector(state=>selectIsLoading(state))
 
     const [showPassword, setShowPassword] = React.useState(false)
 
@@ -50,11 +53,11 @@ const SignIn = () => {
 
     const navigate = useNavigate()
 
-    // React.useEffect(
-    //     ()=>{
-    //         user && navigate('/dashboard/app')
-    //     }
-    // )
+    React.useEffect(
+        ()=>{
+            user && navigate('/dashboard/app')
+        }
+    )
 
 
   return (
@@ -73,7 +76,7 @@ const SignIn = () => {
                     <span onClick={eyeClick} className={styles.move}>{showPassword?<BsFillEyeSlashFill className={styles.icon}/>:<BsFillEyeFill className={styles.icon}/>}</span>
                     </div>
                 </div>
-                <button>Login</button>
+                {isLoading?<LoaderButton/>: <button>Login</button>}
                 <p>Don't have an account? <NavLink style={{textDecoration:'none'}} to={'/signup'}>Sign Up</NavLink></p>
                 { errorMessage === 'Firebase: Error (auth/network-request-failed).' && <p>Network request failed. Check internet connection</p> }
                 { errorMessage === 'Firebase: Error (auth/wrong-password).' && <p>Wrong password!</p> }

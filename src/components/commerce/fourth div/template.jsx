@@ -20,7 +20,7 @@ export default function Template() {
       <Table sx={{ minWidth: 700, height:500 }} aria-label="simple table">
         <TableHead style={{backgroundColor:'rgb(229, 232, 230)', color:'grey'}} sx={{height:'70px'}}>
           <TableRow>
-            <TableCell sx={{ fontSize: 18, fontWeight:'bold', fontFamily:'inherit', width:'200px', color:'rgb(106, 107, 107)', border:'none' }} align='start'>Seller</TableCell>
+            <TableCell sx={{ fontSize: 18, fontWeight:'bold', fontFamily:'inherit', width:'200px', color:'rgb(106, 107, 107)', border:'none' }} align='left'>Seller</TableCell>
             <TableCell sx={{ fontSize: 18, fontWeight:'bold', fontFamily:'inherit', border:'none', color:'rgb(106, 107, 107)' }} align="center">Product</TableCell>
             <TableCell sx={{ fontSize: 18, fontWeight:'bold', fontFamily:'inherit', border:'none', color:'rgb(106, 107, 107)' }} align="center">Country</TableCell>
             <TableCell sx={{ fontSize: 18, fontWeight:'bold', fontFamily:'inherit', border:'none', color:'rgb(106, 107, 107)' }} align="center">Total</TableCell>
@@ -31,7 +31,7 @@ export default function Template() {
         <TableBody>
           {rows.map((row) => (
             <TableRow
-              key={row.name}
+              key={row.id}
               sx={{ '&:last-child td, &:last-child th': { border: '0' } }}
             >
               <TableCell component="th" scope="row"  sx={{ fontSize: 18, fontFamily:'inherit', border:'none' }} align='left'>

@@ -10,12 +10,25 @@ import CommercePage from './pages/commerce/CommerecePage'
 import ProductsPage from './pages/products/ProdutsPage'
 import SignIn from './pages/sign in page/signIn';
 import SignUp from './pages/sign up page/signUp';
+import { checkUserSession } from './redux/user/userReducer';
+import { useDispatch } from 'react-redux';
+// import { selectCurrentUser } from './redux/user/userSelectors';
 
 
 
 
 
 function App() {
+
+  const dispatch = useDispatch()
+
+  // const user = useSelector(state=>selectCurrentUser(state))
+
+  React.useEffect(
+    ()=>{
+      dispatch(checkUserSession())
+    },[dispatch]
+  )
 
   return (
     <div className={appstyle.app}>

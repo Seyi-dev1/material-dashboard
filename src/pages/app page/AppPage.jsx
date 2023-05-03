@@ -11,8 +11,16 @@ import Table1 from '../../components/graphs/fourth div/Table 1/Table'
 import Table from '../../components/graphs/fifth div/table1/table1'
 import Table2 from '../../components/graphs/fifth div/table2/table2'
 import Table3 from '../../components/graphs/fifth div/table3/Table3'
+import { selectCurrentUser } from '../../redux/user/userSelectors'
+import { useSelector } from 'react-redux'
 
 const AppPage = () => {
+
+
+  const user = useSelector(state=>selectCurrentUser(state))
+  const firstName = user.firstName
+
+
   return (
     <div className='appContainer'>
 
@@ -20,7 +28,7 @@ const AppPage = () => {
         <div className="one">
           <div className="content">
             <div className="text">
-              <h1>Welcome back! <br />Sam Tarley</h1>
+              <h1>Welcome back! <br />{firstName}</h1>
               <p>If you are going to use a passage from Lorem Ipsum, you need to be sure there isn't anything.</p>
               <button>Go Now</button>
             </div>

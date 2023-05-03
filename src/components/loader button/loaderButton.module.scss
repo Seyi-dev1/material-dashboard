@@ -1,0 +1,33 @@
+.loaderButton{
+    color: #fff;
+    background-color: #29ca8e;
+    // padding: .1rem;
+    width: 29rem;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    pointer-events: none;
+
+    .loader{
+        pointer-events: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 3px solid rgb(200, 198, 198);
+        border-top-color: #fff;
+        animation: an1 1s ease infinite;
+
+        @keyframes an1 {
+            0%{
+              transform: rotate(0turn);  
+            }
+            100%{
+                transform: rotate(1turn);
+            }
+        }
+    }
+}

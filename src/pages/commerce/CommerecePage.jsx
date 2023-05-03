@@ -9,17 +9,25 @@ import  Container1  from '../../components/commerce/third div/Container1'
 import Container2 from '../../components/commerce/third div/Container2'
 import Container1d4 from '../../components/commerce/fourth div/Container1'
 import Container2d4 from '../../components/commerce/fourth div/Container2'
+import { selectCurrentUser } from '../../redux/user/userSelectors'
+import { useSelector } from 'react-redux'
 
 
 
 const CommerecePage = () => {
+
+
+  const user = useSelector(state=>selectCurrentUser(state))
+  const firstName = user.firstName
+
+
   return (
     <div className='commercePage'>
        <div className="firstDiv">
         <div className="one">
           <div className="content">
             <div className="text">
-              <h1>Congratulations! <br />Sam Tarley</h1>
+              <h1>Congratulations! <br />{firstName}</h1>
               <p>
               You have done 72% 🤩 more sales today.
 
