@@ -4,6 +4,12 @@
     gap: 7rem 5rem;
     width: 20rem;
 
+    @media screen and(max-width:1100px){
+        // justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+    }
+
     .imageAndText{
         display: grid;
         grid-template-columns: 1rem 1rem;
@@ -12,6 +18,10 @@
         font-weight: bold;
         font-size: 1.07rem;
         gap: 2rem;
+
+        @media screen and(max-width:1100px){
+            gap: 1.5rem;
+        }
 
         .text{
             text-align: left;

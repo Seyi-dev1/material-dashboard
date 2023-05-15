@@ -6,7 +6,8 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend
+  Legend,
+  ResponsiveContainer
 } from "recharts";
 
 const data = [
@@ -68,9 +69,10 @@ const data = [
 
 export default function Linechart() {
   return (
-    <LineChart
-      width={800}
-      height={410}
+    <ResponsiveContainer width='100%' height={500}>
+       <LineChart
+      // width={800}
+      // height={410}
       data={data}
       margin={{
         top: 0,
@@ -100,5 +102,7 @@ export default function Linechart() {
       <Line type="monotone" dataKey="Africa" stroke="green"  strokeWidth={4}
         dot={false} />
     </LineChart>
+    </ResponsiveContainer>
+   
   );
 }

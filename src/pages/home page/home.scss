@@ -3,8 +3,38 @@
     grid-template-columns: 21% 79%;
     gap:0;
     width: 100%;
+    @media screen and(max-width:1650px){
+      grid-template-columns: 1fr;
+  }
 
     .sideNav{
+      position: sticky;
+      height: 100vh;
+      top: 0;
+      height: 100vh;
+
+      @media screen and(max-width:1650px){
+        transform: translateX(-100rem);
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        background-color: rgba(0,0,0,0.6);
+        transition: all .3s ease;
+
+        .sidenavContent{
+          width: 23rem;
+
+          @media screen and(max-width:450px){
+           width: 19rem;
+            }
+        }
+        
+        &.responsiveNav{
+          transform: translateX(0);
+        }
+    }
+    
+
      
         ::-webkit-scrollbar{
             width: .4rem;
@@ -31,10 +61,19 @@
     .outlet{
       border-left: 1px dashed rgb(226, 222, 222);
       margin-left: .3rem;
+      display: grid;
+      justify-content: center;
       overflow: hidden;
+
+      @media screen and(max-width:1650px){
+        border-left: none;
+        margin-left: 0;
+    }
 
       .navbar{
         margin-top: 1rem;
+        width: 100%;
       }
     }
 }
+

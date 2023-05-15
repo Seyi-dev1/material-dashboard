@@ -108,8 +108,8 @@ export default function Piechart() {
         activeShape={renderActiveShape}
         data={data}
        
-        innerRadius={148}
-        outerRadius={162}
+        innerRadius={128}
+        outerRadius={142}
         fill="#8884d8"
         dataKey="value"
         onMouseEnter={onPieEnter}

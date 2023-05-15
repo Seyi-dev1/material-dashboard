@@ -35,7 +35,7 @@ const Sidebar = ()=> {
     <div className='sidebar'>
     <div className="logo">
     <NavLink to={'/dashboard'}>
-    <img src={logo} alt="logo" />
+    <img src={logo} alt="logo"/>
     </NavLink> 
     <span className="logo-text">
       Materioo

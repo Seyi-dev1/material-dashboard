@@ -1,5 +1,5 @@
 import './home.scss'
-import React from 'react'
+import React, { useState } from 'react'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Topnav from '../../components/topnav/Topnav'
 import { Outlet } from 'react-router-dom'
@@ -13,15 +13,29 @@ const Home = ()=> {
 
   const user = useSelector(state=>selectCurrentUser(state))
 
+
+  const [nav, setNav] = useState(false)
+  
+  const toggleNav = ()=>{
+    setNav(true)
+  }
+
+  const toggleNavOff = ()=>{
+    setNav(false)
+  }
+
+
   return (
     user?
     <div className='home'>
-        <div className="sideNav">
+        <div className={nav?'sideNav responsiveNav': 'sideNav'} onClick={toggleNavOff}>
+            <div className="sidenavContent">
             <Sidebar/>
+            </div>
         </div>
         <div className="outlet">
         <div className="navbar">
-        <Topnav/>
+        <Topnav click={toggleNav}/>
         </div>
            <Outlet/>
         </div>

@@ -1,31 +1,86 @@
 .appContainer{
-    display: grid;
-    justify-content: center;
+    // display: grid;
+    // justify-content: center;
     width: 100%;
-    padding-bottom: 2rem;
 
     .firstDiv{
         display: grid;
         width: 100%;
         grid-template-columns: 45rem 24rem;
         gap:7rem;
+        justify-content: center;
+
+        @media screen and(max-width:1650px){
+            grid-template-columns: 45rem 30rem;
+        }
+
+        @media screen and(max-width:1350px){
+            grid-template-columns: 42rem 20rem;
+        }
+
+        @media screen and(max-width:1150px){
+            grid-template-columns: 60rem;
+            gap: 3rem;
+        }
+
+         @media screen and(max-width:1100px){
+            grid-template-columns: 50rem;
+            gap: 3rem;
+        }
+
+        @media screen and(max-width:820px){
+            grid-template-columns: 40rem;
+            gap: 3rem;
+        }
+
+        @media screen and(max-width:540px){
+            grid-template-columns: 25rem;
+            gap: 3rem;
+        }
+
+        @media screen and(max-width:450px){
+            grid-template-columns: 18rem;
+            gap: 3rem;
+        }
+
+         @media screen and(max-width:360px){
+            grid-template-columns: 16rem;
+            gap: 3rem;
+        }
+
+
 
 
         .one,.two{
             width: 100%;
-            // background-color: #fff;
-            // box-shadow: 1px 4px 10px rgba(14, 46, 227, 0.087);
+
+            // @media screen and(max-width:820px){
+            //     grid-column: 1/span 2;
+            // }
         }
 
         .one{
             background-color: rgb(223, 248, 233);
             padding:4rem 2rem ;
             border-radius: 15px;
+            display: grid;
+
+            @media screen and(max-width:1150px){
+                text-align: center;
+                width: 100%;
+                justify-content: center;
+                justify-self: center;
+            }
 
             .content{
                 display: grid;
                 grid-template-columns: 26rem 20rem;
                 gap: 1rem;
+
+                @media screen and(max-width:1150px){
+                    grid-template-columns: 1fr;
+                    justify-content: center;
+                }
 
                 .text{
                     h1{
@@ -70,9 +125,35 @@
         }
 
         .two{
-            height: inherit;
+            height: 20rem;
             border-radius: 15px;
+            justify-self: center;
+            @media screen and(max-width:1150px){
+                width: 64rem;
+            }
+
+             @media screen and(max-width:1100px){
+             width: 54rem;
         }
+
+        @media screen and(max-width:820px){
+           width: 44rem;
+        }
+
+        @media screen and(max-width:540px){
+           width: 29rem;
+        }
+
+        @media screen and(max-width:450px){
+            width: 22rem;
+         }
+
+          @media screen and(max-width:360px){
+            width: 20rem;
+         }
+
+        }
+
 
     }
 
@@ -80,24 +161,186 @@
        margin-top: 2.5rem;
        display: grid;
        grid-template-columns: repeat(3, 1fr);
-       justify-self: center;
        gap: 3rem;
+
+       @media screen and(max-width:1650px){
+        gap: 6rem;
+
+        @media screen and(max-width:1350px){
+            grid-template-columns: repeat(3,19rem);
+            justify-content: center;
+        }
+
+        @media screen and(max-width:1150px){
+            grid-template-columns: 64rem;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+          @media screen and(max-width:1100px){
+            grid-template-columns: 54rem;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+
+        @media screen and(max-width:820px){
+            grid-template-columns: 44rem;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+
+        @media screen and(max-width:540px){
+            grid-template-columns: 29rem;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+
+        @media screen and(max-width:450px){
+            grid-template-columns: 22rem;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+
+         @media screen and(max-width:360px){
+            grid-template-columns: 20rem;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+        
+    }
+
     }
     .thirdDiv{
         margin-top: 2rem;
         display: grid;
-        grid-template-columns: 20rem 45rem;
-        gap: 7rem;
+        grid-template-columns: 23rem 49rem;
+        gap: 4rem;
+        justify-content: center;
+
+        @media screen and(max-width:1650px){
+            grid-template-columns: 23rem 45rem;
+            gap: 10rem
+        }
+        @media screen and(max-width:1350px){
+            grid-template-columns: repeat(2, 25rem);
+            gap: 5rem;
+            justify-content: center;
+        }
+
+        @media screen and(max-width:1150px){
+            grid-template-columns: 64rem;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+
+          @media screen and(max-width:1150px){
+            grid-template-columns: 54rem;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+
+        @media screen and(max-width:820px){
+            grid-template-columns: 44rem;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+
+        @media screen and(max-width:540px){
+            grid-template-columns: 29rem;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+
+        @media screen and(max-width:450px){
+            grid-template-columns: 22rem;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+
+          @media screen and(max-width:360px){
+            grid-template-columns: 20rem;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+
+        
+
     }
     .fourthDiv{
         margin-top: 2rem;
         display: grid;
-        // grid-template-columns: 65% 35%;
+
+        @media screen and(max-width:1350px){
+            width: 100%;
+            // justify-self: center;
+        }
+
+        @media screen and(max-width:1150px){
+            justify-content: center;
+            grid-template-columns: 64rem;
+        }
+
+         @media screen and(max-width:1100px){
+            justify-content: center;
+            grid-template-columns: 54rem;
+        }
+
+        @media screen and(max-width:820px){
+            justify-content: center;
+            grid-template-columns: 44rem;
+        }
+
+        @media screen and(max-width:540px){
+            justify-content: center;
+            grid-template-columns: 29rem;
+        }
+
+        @media screen and(max-width:450px){
+            justify-content: center;
+            grid-template-columns: 22rem;
+        }
+
+         @media screen and(max-width:450px){
+            justify-content: center;
+            grid-template-columns: 20rem;
+        }
     }
     .fifthDiv{
         display: grid;
         margin-top: 2rem;
         grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
+
+        @media screen and(max-width:1350px){
+           width: 68rem;
+        }
+
+        @media screen and(max-width:1150px){
+            width: 64rem;
+        }
+
+         @media screen and(max-width:1100px){
+            grid-template-columns: 54rem;
+            justify-content: center;
+        }
+
+        @media screen and(max-width:820px){
+            grid-template-columns: 44rem;
+            justify-content: center;
+        }
+
+        @media screen and(max-width:540px){
+            grid-template-columns: 29rem;
+            justify-content: center;
+        }
+        
+        @media screen and(max-width:450px){
+            grid-template-columns: 22rem;
+            justify-content: center;
+        }
+
+         @media screen and(max-width:450px){
+            grid-template-columns: 20rem;
+            justify-content: center;
+        }
     }
 }
