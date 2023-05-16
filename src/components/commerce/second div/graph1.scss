@@ -1,5 +1,5 @@
 .graph1{
-    width: 23rem;
+    width: 100%;
     height: fit-content;
     border-radius: 15px;
     box-shadow: 
@@ -57,7 +57,7 @@
             }
 
             .graph{
-                justify-self: end;
+                justify-self: start;
             }
         }
 
@@ -69,6 +69,11 @@
             align-items: center;
             grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
+            width: 100%;
+
+            .graph{
+                justify-self: end;
+            }
         }
     }
 }

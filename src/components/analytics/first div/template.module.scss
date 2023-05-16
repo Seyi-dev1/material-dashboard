@@ -1,7 +1,8 @@
 .holder{
     display: grid;
-    grid-template-columns: repeat(4, 19.5rem);
-    justify-content: center;
+    grid-template-columns: repeat(4, 18rem);
+    width: 100%;
+    gap: 1rem;
     
     .template{
         padding: 2rem 0rem;

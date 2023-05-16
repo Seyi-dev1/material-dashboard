@@ -69,7 +69,7 @@ const data = [
 
 export default function Linechart() {
   return (
-    <ResponsiveContainer width='100%' height={500}>
+    <ResponsiveContainer width='101%' height={500}>
        <LineChart
       // width={800}
       // height={410}

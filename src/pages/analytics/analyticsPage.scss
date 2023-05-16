@@ -1,23 +1,28 @@
 .analytics{
     display: grid;
-    padding: 1rem 4rem;
+    padding: 1rem;
+    // justify-content: center;
+    // justify-self: center;
 
     .secondDiv{
         margin-top: 2.5rem;
         display: grid;
+        justify-self: center;
     }
 
     .thirdDiv{
         display: grid;
-        grid-template-columns: 45rem 22rem;
+        grid-template-columns: 44rem 24rem;
         margin-top: 2.5rem;
-        gap: 6.5rem;
+        // justify-self: center;
+        gap: 6rem;
     }
 
     .fourthDiv{
         display: grid;
-        grid-template-columns: 47rem 24.5rem;
+        grid-template-columns: 46rem 24rem;
         margin-top: 2.5rem;
         gap: 4rem;
+        justify-self: center;
     }
 }

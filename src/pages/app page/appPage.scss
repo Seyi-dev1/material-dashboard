@@ -24,6 +24,11 @@
         }
 
          @media screen and(max-width:1100px){
+            grid-template-columns: 56rem;
+            gap: 3rem;
+        }
+
+        @media screen and(max-width:920px){
             grid-template-columns: 50rem;
             gap: 3rem;
         }
@@ -133,8 +138,12 @@
             }
 
              @media screen and(max-width:1100px){
-             width: 54rem;
+             width: 60rem;
         }
+
+        @media screen and(max-width:920px){
+            width: 54rem;
+       }
 
         @media screen and(max-width:820px){
            width: 44rem;
@@ -177,6 +186,12 @@
             gap: 2rem;
         }
           @media screen and(max-width:1100px){
+            grid-template-columns: 60rem;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+
+        @media screen and(max-width:920px){
             grid-template-columns: 54rem;
             margin-top: 5rem;
             gap: 2rem;
@@ -232,7 +247,13 @@
             gap: 2rem;
         }
 
-          @media screen and(max-width:1150px){
+        @media screen and(max-width:1100px){
+            grid-template-columns: 60rem;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+
+          @media screen and(max-width:920px){
             grid-template-columns: 54rem;
             margin-top: 5rem;
             gap: 2rem;
@@ -281,6 +302,11 @@
 
          @media screen and(max-width:1100px){
             justify-content: center;
+            grid-template-columns: 60rem;
+        }
+
+        @media screen and(max-width:920px){
+            justify-content: center;
             grid-template-columns: 54rem;
         }
 
@@ -319,6 +345,11 @@
         }
 
          @media screen and(max-width:1100px){
+            grid-template-columns: 60rem;
+            justify-content: center;
+        }
+
+        @media screen and(max-width:920px){
             grid-template-columns: 54rem;
             justify-content: center;
         }
@@ -338,7 +369,7 @@
             justify-content: center;
         }
 
-         @media screen and(max-width:450px){
+         @media screen and(max-width:375px){
             grid-template-columns: 20rem;
             justify-content: center;
         }

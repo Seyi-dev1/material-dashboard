@@ -15,9 +15,9 @@ const Topnav = ({ click }) => {
     
         <div className="navcontent">
             <div className="menu">
+            <div className="link space"><FiMenu onClick={()=>click()}/></div>
             </div>
             <div className="links">
-            <div className="link space"><FiMenu onClick={()=>click()}/></div>
             <div className="link"><SimpleListMenu/></div>
             <div className="link"><PositionedMenu/></div>
             <div className="link"><PositionedMenu2/></div>

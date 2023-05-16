@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 4rem auto;
     align-items: center;
+    padding-left: 1rem;
     gap: 2rem;
     .image{
 
@@ -14,7 +15,8 @@
     }
 
     .text{
-        line-height: .7rem;
+        // line-height: .7rem;
+        // justify-self: end;
 
         .name{
             // font-weight: bold;
@@ -24,6 +26,7 @@
         .price{
             color: rgb(149, 149, 149);
             font-size: 1.2rem;
+            margin-top: -1rem;
         }
     }
 }
