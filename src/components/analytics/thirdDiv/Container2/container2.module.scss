@@ -3,4 +3,14 @@
     rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
     border-radius: 15px;
     padding: 2rem 1rem;
+    display: grid;
+    justify-content: center;
+
+    h2{
+        justify-self: center;
+    }
+
+    .chart{
+        justify-self: end;
+    }
 }

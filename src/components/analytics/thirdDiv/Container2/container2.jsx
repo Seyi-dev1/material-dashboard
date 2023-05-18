@@ -6,7 +6,9 @@ const Container2 = () => {
   return (
     <div className={styles.container2}>
         <h2>Current Subjects</h2>
-        <Template/>
+       <div className={styles.chart}>
+       <Template/>
+       </div>
     </div>
   )
 }

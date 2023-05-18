@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
+import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from "recharts";
 
 const data = [
   { name: "America", value: 400 },
@@ -20,7 +20,7 @@ const renderCustomizedLabel = ({
   outerRadius,
   percent,
   index
-}: any) => {
+}: anys) => {
   const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
   const x = cx + radius * Math.cos(-midAngle * RADIAN);
   const y = cy + radius * Math.sin(-midAngle * RADIAN);
@@ -53,9 +53,10 @@ export default function Template() {
         return null;
       };
   return (
-    <PieChart width={400} height={400}>
+    <ResponsiveContainer width={400}>
+    <PieChart  height={400}>
      <Tooltip content={CustomTooltip} wrapperStyle={{outline:'none'}}/>
-     <Legend wrapperStyle={{display:'grid', justifyContent:'space-between', top:'26rem', left:'1.5rem' }}
+     <Legend wrapperStyle={{display:'grid', justifyContent:'space-between', top:'26rem', left:'3rem' }}
       formatter={(value, entry, index) => <span className="legend">{value}</span>}
   payload={
     data.map(
@@ -70,11 +71,11 @@ export default function Template() {
 />
       <Pie
         data={data}
-        cx={170}
-        cy={170}
+        cx={197}
+        cy={190}
         labelLine={false}
         label={renderCustomizedLabel}
-        outerRadius={170}
+        outerRadius={140}
         fill="#8884d8"
         dataKey="value"
       >
@@ -83,5 +84,6 @@ export default function Template() {
         ))}
       </Pie>
     </PieChart>
+    </ResponsiveContainer>
   );
 }

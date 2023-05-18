@@ -1,6 +1,6 @@
 
 import React from "react";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from "recharts";
 
 const data = [
   {
@@ -49,11 +49,13 @@ const data = [
 
 export default function Template() {
   return (
-    <BarChart width={700} height={400} data={data}>
+    <ResponsiveContainer width='100%' height={400} >
+    <BarChart data={data}>
     <CartesianGrid strokeDasharray="3" vertical={false} strokeOpacity={0.3}/>
       <XAxis dataKey="name" strokeOpacity={0} tickMargin={10} />
       <YAxis strokeOpacity={0.2} axisLine={false} tickMargin={10} />
       <Bar dataKey="uv"  fill="skyblue" radius={[10, 0, 10, 0]} barSize={30} />
     </BarChart>
+    </ResponsiveContainer>
   );
 }

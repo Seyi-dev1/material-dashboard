@@ -4,6 +4,32 @@
     // justify-content: center;
     // justify-self: center;
 
+    .welcome{
+
+        h1{
+            @media screen and (max-width:1200px){
+                margin-left: 3rem;
+                font-size: 1.2rem;
+            }
+            @media screen and (max-width:920px){
+                margin-left: 1rem;
+            }
+            @media screen and (max-width:850px){
+                margin-left: 4rem;
+            }
+            @media screen and (max-width:780px){
+            margin-left: 2rem;
+            }
+            @media screen and (max-width:540px){
+                margin-left: 1rem;
+                }
+            @media screen and (max-width:450px){
+                margin-left: 1rem;
+                    }    
+        }
+       
+    }
+
     .secondDiv{
         margin-top: 2.5rem;
         display: grid;
@@ -14,8 +40,43 @@
         display: grid;
         grid-template-columns: 44rem 24rem;
         margin-top: 2.5rem;
-        // justify-self: center;
+        justify-self: center;
         gap: 6rem;
+
+        @media screen and (max-width:1024px){
+            grid-template-columns: repeat(2, 27rem);
+        }
+
+        @media screen and (max-width:920px){
+            grid-template-columns: repeat(2, 24rem);
+        }
+
+        @media screen and (max-width:850px){
+            grid-template-columns: 44rem;
+            justify-items: center;
+            gap: 3rem;
+        }
+
+        @media screen and (max-width:550px){
+            grid-template-columns: 30rem;
+            justify-items: center;
+        }
+
+        @media screen and (max-width:450px){
+            grid-template-columns: 21.5rem;
+            justify-items: center;
+        }
+
+        @media screen and (max-width:395px){
+            grid-template-columns: 19.5rem;
+            justify-items: center;
+        }
+
+        @media screen and (max-width:365px){
+            grid-template-columns: 20rem;
+            justify-items: center;
+        }
+
     }
 
     .fourthDiv{
@@ -24,5 +85,31 @@
         margin-top: 2.5rem;
         gap: 4rem;
         justify-self: center;
+
+        @media screen and (max-width:1024px){
+            grid-template-columns: repeat(2, 27rem);
+            gap: 6rem;
+            
+        }
+
+        @media screen and (max-width:920px){
+            grid-template-columns: repeat(2, 24rem);
+        }
+
+        @media screen and (max-width:850px){
+            grid-template-columns: 44rem;
+        }
+
+        @media screen and (max-width:550px){
+            grid-template-columns: 32rem;
+        }
+
+        @media screen and (max-width:450px){
+            grid-template-columns: 23rem;
+        }
+
+        @media screen and (max-width:395px){
+            grid-template-columns: 21rem;
+        }
     }
 }

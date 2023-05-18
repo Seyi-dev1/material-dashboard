@@ -3,7 +3,7 @@
     grid-template-columns: 21% 79%;
     gap:0;
     width: 100%;
-    @media screen and(max-width:1650px){
+    @media screen and (max-width:1650px){
       grid-template-columns: 1fr;
   }
 
@@ -13,7 +13,7 @@
       top: 0;
       height: 100vh;
 
-      @media screen and(max-width:1650px){
+      @media screen and (max-width:1650px){
         transform: translateX(-100rem);
         position: fixed;
         z-index: 10;
@@ -24,7 +24,7 @@
         .sidenavContent{
           width: 23rem;
 
-          @media screen and(max-width:450px){
+          @media screen and (max-width:450px){
            width: 19rem;
             }
         }
@@ -65,7 +65,7 @@
       justify-content: center;
       overflow: hidden;
 
-      @media screen and(max-width:1650px){
+      @media screen and (max-width:1650px){
         border-left: none;
         margin-left: 0;
     }

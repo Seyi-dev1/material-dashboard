@@ -49,7 +49,8 @@ const data = [
 
 export default function Template() {
   return (
-    <RadarChart cx={175} cy={230} outerRadius={125} width={500} height={500} data={data}>
+    
+    <RadarChart cx={188} cy={230} outerRadius={95} width={400}  height={500} data={data}>
       <PolarGrid />
       <PolarAngleAxis dataKey="subject" />
       <PolarRadiusAxis angle={90} domain={[0, 110]} />

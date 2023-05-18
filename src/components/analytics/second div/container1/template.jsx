@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  ResponsiveContainer,
   ComposedChart,
   Line,
   Area,
@@ -65,8 +66,8 @@ const data = [
 
 export default function Template() {
   return (
+    <ResponsiveContainer width='100%' height={500}>
     <ComposedChart
-      width={700}
       height={500}
       data={data}
       margin={{
@@ -92,5 +93,6 @@ export default function Template() {
         strokeWidth={3}
         dot={false} />
     </ComposedChart>
+    </ResponsiveContainer>
   );
 }
