@@ -74,6 +74,12 @@
                 padding: 1.7rem;
                 border-radius: 50%;
 
+                @media screen and (max-width:540px){
+                    font-size: 1.5rem;
+                    height: 1.5rem;
+                    padding: 1rem;
+                   }
+
                 &.apple{
                     color: rgb(5, 97, 5);
                     background-color: rgb(144, 210, 144);
@@ -95,6 +101,12 @@
             color: rgb(28, 88, 132);
             margin-top: 1rem;
 
+            @media screen and (max-width:540px){
+                font-size: .7rem;
+                text-align: center;
+               }
+
+
             &.apple{
                 color: rgb(5, 97, 5);
             }
@@ -112,6 +124,11 @@
             color: rgb(16, 125, 133);
             font-size: 1.2rem;
             margin-top: -2rem;
+
+            @media screen and (max-width:540px){
+                font-size: 13px;
+                margin-top: -1rem;
+               }
 
             &.apple{
                 color: rgb(5, 97, 5);

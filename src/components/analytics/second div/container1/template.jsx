@@ -78,13 +78,13 @@ export default function Template() {
       }}
     >
      <CartesianGrid strokeDasharray="3" vertical={false} strokeOpacity={0.3}/>
-      <XAxis dataKey="name" strokeOpacity={0} tickMargin={10} />
-      <YAxis strokeOpacity={0.2} axisLine={false} tickMargin={10} />
+      <XAxis dataKey="name" fontSize={window.innerWidth<=540?11:13} strokeOpacity={0} tickMargin={10} />
+      <YAxis strokeOpacity={0.2} fontSize={window.innerWidth<=540?11:13} axisLine={false} tickMargin={10} />
       <Tooltip />
       <Legend verticalAlign="top" vertOriginX="left" align="right"
         iconType="circle"
-        formatter={(value, entry, index) => <span style={{color:'black', marginRight:'20px', marginBottom:'50px'}}>{value}</span>}
-        wrapperStyle={{top:-10}}
+        formatter={(value, entry, index) => <span style={{color:'black', marginRight:'20px', marginBottom:'50px', fontSize:window.innerWidth<=540?13:15}}>{value}</span>}
+        wrapperStyle={{top:5}}
         iconSize={16}
       />
       <Area type="monotone" dataKey="Windows" fill="gold" fillOpacity={0.1} stroke="gold" strokeWidth={3} />

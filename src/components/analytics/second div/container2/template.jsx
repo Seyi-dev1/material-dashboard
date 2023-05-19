@@ -56,8 +56,8 @@ export default function Template() {
     <ResponsiveContainer width={400}>
     <PieChart  height={400}>
      <Tooltip content={CustomTooltip} wrapperStyle={{outline:'none'}}/>
-     <Legend wrapperStyle={{display:'grid', justifyContent:'space-between', top:'26rem', left:'3rem' }}
-      formatter={(value, entry, index) => <span className="legend">{value}</span>}
+     <Legend wrapperStyle={{display:'grid', justifyContent:'space-between', top:'26rem', left:'4rem' }}
+      formatter={(value, entry, index) => <span style={{fontSize:window.innerWidth<=540?13:17}} className="legend">{value}</span>}
   payload={
     data.map(
       (item, index) => ({

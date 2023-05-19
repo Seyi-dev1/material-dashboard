@@ -3,4 +3,16 @@
     rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
     border-radius: 15px;
     padding: 2rem 1rem;
+
+    h2{
+        @media screen and (max-width:540px){
+            font-size: .9rem;
+           }
+    }
+
+    p{
+        @media screen and (max-width:540px){
+            font-size: 13px;
+           }
+    }
 }

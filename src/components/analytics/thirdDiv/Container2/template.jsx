@@ -57,7 +57,7 @@ export default function Template() {
       <Radar name="Mike" dataKey="A" stroke="purple" fill="purple" fillOpacity={0.4} />
       <Radar name="Lily" dataKey="B" stroke="orange" fill="orange" fillOpacity={0.4} />
       <Radar name="Abdul" dataKey="C" stroke="green" fill="green" fillOpacity={0.4} />
-      <Legend  wrapperStyle={{display:'grid', justifyContent:'space-between', top:'29rem', left:'6rem' }}
+      <Legend  wrapperStyle={{display:'grid', justifyContent:'space-between', top:'29rem', left:'6rem', fontSize:window.innerWidth<=540?13:15 }}
         formatter={(value, entry, index) => <span style={{color:'black',}}>{value}</span>}
       />
     </RadarChart>

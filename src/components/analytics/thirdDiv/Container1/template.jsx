@@ -52,8 +52,8 @@ export default function Template() {
     <ResponsiveContainer width='100%' height={400} >
     <BarChart data={data}>
     <CartesianGrid strokeDasharray="3" vertical={false} strokeOpacity={0.3}/>
-      <XAxis dataKey="name" strokeOpacity={0} tickMargin={10} />
-      <YAxis strokeOpacity={0.2} axisLine={false} tickMargin={10} />
+      <XAxis fontSize={window.innerWidth<=540?13:15} dataKey="name" strokeOpacity={0} tickMargin={10} />
+      <YAxis fontSize={window.innerWidth<=540?13:15} strokeOpacity={0.2} axisLine={false} tickMargin={10} />
       <Bar dataKey="uv"  fill="skyblue" radius={[10, 0, 10, 0]} barSize={30} />
     </BarChart>
     </ResponsiveContainer>

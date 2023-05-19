@@ -13,6 +13,11 @@
 
     h2{
         justify-self: center;
+
+        @media screen and (max-width:540px){
+            font-size: .9rem;
+           }
+        
         // margin-left: 1rem;
     }
 
