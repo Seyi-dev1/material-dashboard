@@ -8,10 +8,18 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
+        @media screen and (max-width:540px){
+          font-size: 13px;
+         }
+
         .title{
             font-weight: 800;
             color: rgb(55, 53, 53);
             font-size: 1.1rem;
+
+            @media screen and (max-width:540px){
+                font-size: 13px;
+               }
         }
 
         .figures{

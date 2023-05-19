@@ -10,10 +10,18 @@
     .bold{
         font-size: 1.3rem;
         line-height: 1rem;
+
+        @media screen and (max-width:540px){
+            font-size: .7rem;
+           }
     }
 
     .title{
         color: rgb(68, 66, 66);
+
+        @media screen and (max-width:540px){
+            font-size: .6rem;
+           }
     }
 
     .grid{
@@ -23,9 +31,16 @@
         font-size: 1.1rem;
         align-items: center;
 
+        @media screen and (max-width:540px){
+            font-size: 13px;
+           }
+
         .text{
             color: grey;
             font-size: 1.19rem;
+            @media screen and (max-width:540px){
+                font-size: 13px;
+               }
         }
 
         .figure{
@@ -34,6 +49,9 @@
         .figure.bolden{
             font-size: 1.4rem;
             color: rgb(45, 219, 45);
+            @media screen and (max-width:540px){
+                font-size: 15px;
+               }
         }
     }
 
@@ -51,6 +69,10 @@
             font-family: inherit;
             font-size: 1.17rem;
             background-color: rgb(255, 179, 0);
+
+            @media screen and (max-width:540px){
+                font-size: .8rem;
+               }
             // font-weight: bold;
             &:hover{
                 filter: brightness(70%);

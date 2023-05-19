@@ -5,7 +5,7 @@ const Container2 = () => {
   return (
     <div className={styles.container2}>
     <div className={styles.title}>
-        <h3>Current Balance</h3>
+        <h2>Current Balance</h2>
     </div>
     <div className={styles.bold}>
         <h1>$182,150</h1>

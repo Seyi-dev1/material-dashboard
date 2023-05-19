@@ -8,4 +8,10 @@
     display: grid;
     gap: 2rem;
 
+    h2{
+        @media screen and (max-width:540px){
+            font-size: .9rem;
+         }
+    }
+
 }
