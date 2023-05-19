@@ -96,12 +96,20 @@
                         font-family: "Public Sans", sans-serif;
                         padding: 0;
                         margin: 0;
+
+                        @media screen and (max-width:540px){
+                           font-size: 1rem;
+                        }
                     }
 
                     p{
                         color: rgb(36, 152, 139);
                         font-size: 1.13rem;
                         line-height: 2rem;
+
+                        @media screen and (max-width:540px){
+                            font-size: 13px;
+                         }
                     }
 
                     button{
@@ -116,6 +124,10 @@
                         border-radius: 7px;
                         margin-top: 1rem;
                         cursor: pointer;
+
+                        @media screen and (max-width:540px){
+                            font-size: .8rem;
+                         }
                     }
                 }
 
@@ -205,7 +217,7 @@
 
         @media screen and (max-width:540px){
             grid-template-columns: 29rem;
-            margin-top: 5rem;
+            margin-top: 2rem;
             gap: 2rem;
         }
 
@@ -217,7 +229,7 @@
 
          @media screen and (max-width:360px){
             grid-template-columns: 20rem;
-            margin-top: 5rem;
+            margin-top: 0rem;
             gap: 2rem;
         }
         

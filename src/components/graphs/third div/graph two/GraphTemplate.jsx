@@ -54,13 +54,13 @@ const data = [
     amt: 2100
   },
   {
-    name: "Jul",
+    name: "Aug",
     Europe: 200,
     Africa: 1000,
     amt: 2100
   },
   {
-    name: "Jul",
+    name: "Sep",
     Europe: 4326,
     Africa: 2900,
     amt: 2100
@@ -82,12 +82,12 @@ export default function Linechart() {
       }}
     >
       <CartesianGrid strokeDasharray="3" vertical={false} strokeOpacity={0.5}/>
-      <XAxis dataKey="name" strokeOpacity={0} tickMargin={10} />
-      <YAxis  strokeOpacity={0.2} axisLine={false} tickMargin={10}/>
+      <XAxis dataKey="name" fontSize={12} strokeOpacity={0} tickMargin={10} />
+      <YAxis  strokeOpacity={0.2} fontSize={12} axisLine={false} tickMargin={10}/>
       <Tooltip />
       <Legend verticalAlign="top" vertOriginX="left" align="right"
         iconType="circle"
-        formatter={(value, entry, index) => <span style={{color:'black', marginRight:'20px', marginBottom:'50px'}}>{value}</span>}
+        formatter={(value, entry, index) => <span style={{color:'black', marginRight:'20px', marginBottom:'50px', fontSize:'13px'}}>{value}</span>}
         wrapperStyle={{top:-40}}
         iconSize={16}
       />

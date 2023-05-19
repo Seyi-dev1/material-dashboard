@@ -13,6 +13,9 @@
     .img1{
         img{
             width: 3.6rem;
+            @media screen and (max-width:540px){
+                width: 2.6rem;
+             }
             border-radius: 50%;
         }
     }
@@ -24,10 +27,16 @@
         .name{
             font-size: 1.16rem;
             text-align: left;
+            @media screen and (max-width:540px){
+                font-size: 13px;
+             }
         }
         .stats{
             color: rgb(141, 134, 134);
             margin-top: -.5rem;
+            @media screen and (max-width:540px){
+                font-size: 13px;
+             }
 
             .emoji{
                 margin-right: .5rem;
@@ -37,6 +46,12 @@
 
     .img2{
         justify-self: end;
+
+        img{
+            @media screen and (max-width:540px){
+                width: 1.5rem;
+             }
+        }
         .trophy1{
             background-color: rgb(222, 253, 222);
             border-radius: 50%;

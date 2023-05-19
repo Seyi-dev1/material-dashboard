@@ -1,5 +1,9 @@
 .Table{
  width: 100%;
+
+ @media screen and (max-width:540px){
+    font-size: 13px;
+ }
     .status{
         padding: 4px 10px;
         border-radius: 5px;

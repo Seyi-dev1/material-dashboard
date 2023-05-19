@@ -24,12 +24,12 @@ export default function BasicTable() {
   return (
     <TableContainer component={Paper} style={{boxShadow:'none', borderBottom:'1px solid rgb(235, 232, 232)', borderRadius:'0px'}} className='Table'>
       <Table sx={{ width: '100%', height:500 }} aria-label="simple table">
-        <TableHead style={{backgroundColor:'rgb(239, 251, 252)'}} sx={{height:'100px'}}>
+        <TableHead style={{backgroundColor:'rgb(239, 251, 252)'}} sx={{height:window.innerWidth <= 540?50:100}}>
           <TableRow>
-            <TableCell sx={{ fontSize: 18, fontWeight:'bold', fontFamily:'inherit', width:'200px', border:'none' }} align='center'>Invoice ID</TableCell>
-            <TableCell sx={{ fontSize: 18, fontWeight:'bold', fontFamily:'inherit', border:'none' }} align="center">Category</TableCell>
-            <TableCell sx={{ fontSize: 18, fontWeight:'bold', fontFamily:'inherit', border:'none' }} align="center">Price</TableCell>
-            <TableCell sx={{ fontSize: 18, fontWeight:'bold', fontFamily:'inherit', border:'none' }} align="center">Status</TableCell>
+            <TableCell sx={{ fontSize: window.innerWidth <= 540?13:18, fontWeight:'bold', fontFamily:'inherit', width:'200px', border:'none' }} align='center'>Invoice ID</TableCell>
+            <TableCell sx={{ fontSize: window.innerWidth <= 540?13:18, fontWeight:'bold', fontFamily:'inherit', border:'none' }} align="center">Category</TableCell>
+            <TableCell sx={{ fontSize: window.innerWidth <= 540?13:18, fontWeight:'bold', fontFamily:'inherit', border:'none' }} align="center">Price</TableCell>
+            <TableCell sx={{ fontSize: window.innerWidth <= 540?13:18, fontWeight:'bold', fontFamily:'inherit', border:'none' }} align="center">Status</TableCell>
         
           </TableRow>
         </TableHead>
@@ -39,12 +39,12 @@ export default function BasicTable() {
               key={row.price}
               sx={{ '&:last-child td, &:last-child th': { border: '0' } }}
             >
-              <TableCell component="th" scope="row"  sx={{ fontSize: 18, fontFamily:'inherit', border:'none' }} align='right'>
+              <TableCell component="th" scope="row"  sx={{ fontSize: window.innerWidth <= 540?13:18, fontFamily:'inherit', border:'none' }} align='right'>
                 {row.InvoiceId}
               </TableCell>
-              <TableCell sx={{ fontSize: 18, fontFamily:'inherit', border:'none' }} align="center">{row.category}</TableCell>
-              <TableCell sx={{ fontSize: 18, fontFamily:'inherit', border:'none' }} align="center">{row.price}</TableCell>
-              <TableCell sx={{ fontSize: 18, fontFamily:'inherit', border:'none' }} align="center"><span className={`status  ${row.status}`} >{row.status}</span></TableCell>
+              <TableCell sx={{ fontSize: window.innerWidth <= 540?13:18, fontFamily:'inherit', border:'none' }} align="center">{row.category}</TableCell>
+              <TableCell sx={{ fontSize: window.innerWidth <= 540?13:18, fontFamily:'inherit', border:'none' }} align="center">{row.price}</TableCell>
+              <TableCell sx={{ fontSize: window.innerWidth <= 540?13:18, fontFamily:'inherit', border:'none' }} align="center"><span className={`status  ${row.status}`} >{row.status}</span></TableCell>
             </TableRow>
           ))}
         </TableBody>

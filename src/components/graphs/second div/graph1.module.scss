@@ -5,6 +5,10 @@
     box-shadow: 
     rgba(145, 158, 171, 0.2) 0px 0px 2px 1px,
     rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+
+    @media screen and (max-width:540px){
+        height: 9rem;
+     }
    
     .content{
         padding: 1.3rem 1rem;
@@ -13,6 +17,10 @@
             font-weight: 600;
             font-size: 1.17rem;
             color:rgb(56, 55, 55);
+
+            @media screen and (max-width:540px){
+                font-size: .7rem;
+             }
         }
 
         .visual{
@@ -35,6 +43,11 @@
                         width: 20px;
                         object-fit: cover;
                         border-radius: 50%;
+
+                        @media screen and (max-width:540px){
+                            height: 14px;
+                            width: 14px;
+                         }
                     }
                     .minus{
                         background-color: rgb(255, 225, 225);
@@ -44,6 +57,10 @@
                     font-weight: bold;
                     font-size: 1.1rem;
                     color: rgb(35, 35, 35);
+
+                    @media screen and (max-width:540px){
+                        font-size: .8rem;
+                     }
                 }
             }
 
@@ -56,6 +73,10 @@
             font-size: 1.35rem;
             font-weight: bolder;
             color: rgb(56, 55, 55);
+
+            @media screen and (max-width:540px){
+                font-size: .7rem;
+             }
         }
     }
 }

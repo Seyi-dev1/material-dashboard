@@ -7,6 +7,10 @@
 
     h2{
       color: rgb(71, 70, 70);
+
+      @media screen and (max-width:540px){
+        font-size: .9rem;
+     }
     }
 
     ::-webkit-scrollbar{

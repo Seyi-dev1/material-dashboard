@@ -25,6 +25,10 @@
             background-clip: text;
             color: transparent;
             background-image: linear-gradient(120deg, rgb(40, 189, 95),rgb(49, 200, 234));
+
+            @media screen and (max-width:540px){
+                font-size: .9rem;
+             }
         }
     }
 
@@ -34,11 +38,18 @@
         background-color:rgb(246, 243, 243);
         align-items: center;
         border-radius: 15px;
-        margin-top: 4rem;
+        margin-top: 2rem;
         cursor: pointer;
+
+        @media screen and (max-width:540px){
+            grid-template-columns: 4rem 10rem;
+         }
 
         .block{
             margin-left: 2rem;
+            @media screen and (max-width:540px){
+                margin-left: 1rem;
+             }
           h2{
             display: grid;
             justify-content: center;
@@ -47,12 +58,22 @@
             width:25px ;
             padding: 1rem;
             border-radius: 50%;
+
+            @media screen and (max-width:540px){
+                font-size: 1rem;
+                height: 15px;
+                width: 15px;
+                padding: .7rem;
+             }
           }
         }
 
         .description{
             // line-height: .5rem;
             font-size: 1.08rem;
+            @media screen and (max-width:540px){
+                font-size: .7rem;
+             }
             h4{
                 letter-spacing: 1px;
                 color: rgb(73, 69, 69);
@@ -60,6 +81,9 @@
             p{
                 color: rgb(175, 171, 171);
                 margin-top: -1rem;
+                @media screen and (max-width:540px){
+                    margin-top: -0.5rem;
+                 }
             }
         }
     }
@@ -73,6 +97,10 @@
             margin-left: 1rem;
             letter-spacing: 1px;
             margin-top: 2.5rem;
+
+            @media screen and (max-width:540px){
+                font-size: .5rem;
+             }
         }
 
         .link-items{
@@ -93,6 +121,10 @@
                     border-radius: 10px;
                     text-decoration: none;
 
+                    @media screen and (max-width:540px){
+                        padding: .7rem;
+                     }
+
                     .item{
                         display: grid;
                         grid-template-columns: 2rem auto;
@@ -107,12 +139,19 @@
                             color: rgba(49, 176, 66, 0.888);
                             font-size: 2rem;
                             font-weight: bold;
+
+                            @media screen and (max-width:540px){
+                                font-size: 1.5rem;
+                             }
                         }
 
                         .text{
                             // font-weight: bold;
                             font-size: 1.08rem;
                             color: rgba(59, 201, 78, 0.888);
+                            @media screen and (max-width:540px){
+                                font-size: .9rem;
+                             }
                         }
                         
                         &:hover{
@@ -129,12 +168,18 @@
                         color: rgb(155, 152, 152);
                         font-size: 2rem;
                         font-weight: bold;
+                        @media screen and (max-width:540px){
+                            font-size: 1.5rem;
+                         }
                     }
 
                     .text{
                         // font-weight: bold;
                         font-size: 1.08rem;
                         color: rgb(133, 126, 126);
+                        @media screen and (max-width:540px){
+                            font-size: .9rem;
+                         }
                     }
                 }
             }
